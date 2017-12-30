@@ -1,0 +1,274 @@
+[
+  {
+    "type": "math",
+    "text": " Teacher: Why are you doing your multiplication on the floor? Student: You told me not to use tables."
+  },
+  {
+    "type": "math",
+    "text": " What happened to the plant in math class? It grew square roots."
+  },
+  {
+    "type": "math",
+    "text": " After a talking sheepdog gets all the sheep in the pen, he reports to the farmer: “All 40 accounted for.” “But I only have 36 sheep,” says the farmer. “I know,” says the sheepdog. “But I rounded them up.”"
+  },
+  {
+    "type": "math",
+    "text": " Did you hear about the constipated mathematician? He worked it out with a pencil."
+  },
+  {
+    "type": "math",
+    "text": " My girlfriend’s the square root of -100. A perfect 10, but purely imaginary."
+  },
+  {
+    "type": "math",
+    "text": " Hear about the statistician  who drowned crossing a river? It  was three feet deep on average."
+  },
+  {
+    "type": "math",
+    "text": " How many molecules in a bowl of guacamole? Avacado’s Number."
+  },
+  {
+    "type": "math",
+    "text": " Why couldn’t the moebius strip enroll at the school? They required an orientation."
+  },
+  {
+    "type": "math",
+    "text": " Did you hear about the mathematician who’s afraid of negative numbers? He will stop at nothing to avoid them."
+  },
+  {
+    "type": "math",
+    "text": " Two statisticians go bird hunting. The first one fires at the bird but overshoots by 5 feet. The second one fires and undershoots the bird by 5 feet. They both give each other a high-five and say “Got it!”."
+  },
+  {
+    "type": "math",
+    "text": " Why wasn’t the geometry teacher at school? Because she sprained her angle!"
+  },
+  {
+    "type": "math",
+    "text": " I put my root beer in a square glass. Now it’s just beer."
+  },
+  {
+    "type": "math",
+    "text": " Why did the chicken cross the mobius strip? To get to the same side."
+  },
+  {
+    "type": "math",
+    "text": " “What happened to your girlfriend, that really cute math student?” “She no longer is my girlfriend. I caught her cheating on me.” “I don’t believe that she cheated on you!” “Well, a couple of nights ago I called her on the phone, and she told me that she was in bed wrestling with three unknowns.”"
+  },
+  {
+    "type": "math",
+    "text": " Why do mathematicians like parks? Because of all the natural logs."
+  },
+  {
+    "type": "math",
+    "text": " How do you make seven an even number? Take the s out!"
+  },
+  {
+    "type": "math",
+    "text": " Why is a math book always unhappy? Because it always has lots of problems."
+  },
+  {
+    "type": "math",
+    "text": " Did you hear the one about the statistician? Probably."
+  },
+  {
+    "type": "math",
+    "text": " Why should the number 288 never be mentioned? It’s two gross."
+  },
+  {
+    "type": "math",
+    "text": " What do you call friends who love math? Algebros."
+  },
+  {
+    "type": "math",
+    "text": " Why did the 30-60-90 triangle marry the 45-45-90 triangle? They were right for each other."
+  },
+  {
+    "type": "math",
+    "text": " Old mathematicians never die; they just lose some of their functions."
+  },
+  {
+    "type": "math",
+    "text": " How do you know your math tutor is hungry? He’ll work for pi."
+  },
+  {
+    "type": "math",
+    "text": " Why didn’t the Romans find algebra very challenging? Because X was always 10."
+  },
+  {
+    "type": "math",
+    "text": " Why don’t you do arithmetic in the jungle? Because if you add 4+4 you get ate!"
+  },
+  {
+    "type": "math",
+    "text": " Why did I divide sin by tan? Just cos."
+  },
+  {
+    "type": "math",
+    "text": " Why didn’t the number 4 get into the nightclub? Because he is 2 square."
+  },
+  {
+    "type": "math",
+    "text": " What do you call a number that can’t keep still? A roamin’ numeral."
+  },
+  {
+    "type": "math",
+    "text": " Where do math teachers go on vacation? To Times Square."
+  },
+  {
+    "type": "math",
+    "text": " Why did the obtuse angle go to the beach? Because it was over 90 degrees."
+  },
+  {
+    "type": "math",
+    "text": " How do you call a one-sided nudie bar? A Mobius strip club."
+  },
+  {
+    "type": "math",
+    "text": " Why did the mutually exclusive events break up? They had nothing in common."
+  },
+  {
+    "type": "math",
+    "text": " What is the first derivative of a cow? Prime Rib!"
+  },
+  {
+    "type": "math",
+    "text": " Why is 6 afraid of 7? Because 7 8 9."
+  },
+  {
+    "type": "math",
+    "text": " What does the zero say to the eight? Nice belt!"
+  },
+  {
+    "type": "math",
+    "text": " What do you call a man who spent all summer at the beach? A Tangent."
+  },
+  {
+    "type": "math",
+    "text": " How does a math professor propose to his fiancé? With a polynomial ring!"
+  },
+  {
+    "type": "math",
+    "text": " How is an artificial Christmas tree like the fourth root of -68? Neither has real roots."
+  },
+  {
+    "type": "math",
+    "text": " Why was the Calculus teacher bad at baseball? He was better at fitting curves than hitting them."
+  },
+  {
+    "type": "math",
+    "text": " What is the difference between a mathematician and a philosopher? The mathematician only needs paper, pencil, and a trash bin for his work – the philosopher can do without the trash bin."
+  },
+  {
+    "type": "math",
+    "text": " What is a math teacher’s favorite type of tree? A “Geome-tree”."
+  },
+  {
+    "type": "math",
+    "text": " What is a proof? One-half percent of alcohol."
+  },
+  {
+    "type": "math",
+    "text": " What do you get if you cross a math teacher with a crab? Snappy answers."
+  },
+  {
+    "type": "math",
+    "text": " Why is the obtuse triangle always upset? Because it is never right."
+  },
+  {
+    "type": "math",
+    "text": " Why did the two 4’s skip lunch? They already 8! (ate)."
+  },
+  {
+    "type": "math",
+    "text": " What is the difference between a Ph.D. in mathematics and a large pizza? A large pizza can feed a family of four."
+  },
+  {
+    "type": "math",
+    "text": " What do you get if you cross a math teacher and a clock? Arithma-ticks!"
+  },
+  {
+    "type": "math",
+    "text": " What do you get if you add two apples and three apples? A middle school math problem!"
+  },
+  {
+    "type": "math",
+    "text": " What is normed, complete, and yellow? A Bananach space."
+  },
+  {
+    "type": "math",
+    "text": " Why did the boy eat his math homework? Because the teacher told him, it was a piece of cake."
+  },
+  {
+    "type": "math",
+    "text": " How do you call the largest accumulation point of poles? Warsaw!"
+  },
+  {
+    "type": "math",
+    "text": " How does a mathematician induce good behavior in her children? “I’ve told you n times, I’ve told you n+1 times.”"
+  },
+  {
+    "type": "math",
+    "text": " What did the complementary angle say to the isosceles triangle? Nice Legs."
+  },
+  {
+    "type": "math",
+    "text": " What is the world’s longest song? “Aleph-nought Bottles of Beer on the Wall.”"
+  },
+  {
+    "type": "math",
+    "text": " What did 2 say to 4 after 2 beat him in a race? 2 Fast 4 U!"
+  },
+  {
+    "type": "math",
+    "text": " How do you know when you’ve reached your Math Professors voice-mail? The message is “The number you have dialed is imaginary. Please, rotate your phone by 90 degrees and try again.”"
+  },
+  {
+    "type": "math",
+    "text": " How do you teach a blonde math? Subtract her clothes, divide her legs, and square root her."
+  },
+  {
+    "type": "math",
+    "text": " What’s the king of the pencil case? The ruler."
+  },
+  {
+    "type": "math",
+    "text": " Why don’t people put the numbers 2, 3, and 0 together? Because they are two turdy."
+  },
+  {
+    "type": "math",
+    "text": " What did Al Gore play on his guitar? An algorithm!"
+  },
+  {
+    "type": "math",
+    "text": " What’s the difference between a diameter and a radius? A Radius."
+  },
+  {
+    "type": "math",
+    "text": " What did the mathematician’s parrot say? A poly “no meal”."
+  },
+  {
+    "type": "math",
+    "text": " What is the definition of a polar bear? A rectangular bear after a coordinate transformation."
+  },
+  {
+    "type": "math",
+    "text": " Why shouldn’t you argue with a decimal? Decimals always have a point."
+  },
+  {
+    "type": "math",
+    "text": " What did one math book say to the other? Don’t bother me I’ve got my own problems!"
+  },
+  {
+    "type": "math",
+    "text": " Why didn’t the quarter roll down the hill with the nickel? Because it had more cents."
+  },
+  {
+    "type": "math",
+    "text": " How do you solve any equation? Multiply both sides by zero."
+  },
+  {
+    "type": "math",
+    "text": " Why do they never serve beer at a math party? Because you can’t drink and derive."
+  }
+]

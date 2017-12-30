@@ -1,0 +1,126 @@
+[
+  {
+    "type": "nerd",
+    "text": " Why can’t you trust atoms? They make up everything."
+  },
+  {
+    "type": "nerd",
+    "text": " Some helium floats into a bar. The bartender says “Sorry, we don’t serve noble gases here.” The helium doesn’t react."
+  },
+  {
+    "type": "nerd",
+    "text": " If the number 666 is considered evil. Is 25.8069 the root of all evil?"
+  },
+  {
+    "type": "nerd",
+    "text": " A roman soldier walked into a bar. He held up two fingers and said to the bartender: “Five beers please.”"
+  },
+  {
+    "type": "nerd",
+    "text": " There are 10 types of people in the world: those who understand binary, and those who don’t."
+  },
+  {
+    "type": "nerd",
+    "text": " How do you know the moon is going broke? It’s down to its last quarter."
+  },
+  {
+    "type": "nerd",
+    "text": " Two atoms are walking along. One of them says: “Oh, no, I think I lost an electron.” “Are you sure?” “Yes, I’m positive.”"
+  },
+  {
+    "type": "nerd",
+    "text": " A biologist, a chemist and a statistician are out hunting. The biologist shoots at a deer and misses five feet to the left. The chemist shoots at the same deer and misses five feet to the right. The statistician shouts, “We got him!”"
+  },
+  {
+    "type": "nerd",
+    "text": " What do you call an educated tube? A graduated cylinder."
+  },
+  {
+    "type": "nerd",
+    "text": " A group of protesters in front of a physics lab: “What do we want?” “Time travel” “When do we want it?” “Irrelevant.”"
+  },
+  {
+    "type": "nerd",
+    "text": " Knock knock. Who’s there? To. To who? No, to whom."
+  },
+  {
+    "type": "nerd",
+    "text": " How many programmers does it take to change a light bulb? None. It’s a hardware problem."
+  },
+  {
+    "type": "nerd",
+    "text": " When I was a kid, my English teacher looked my way and said: “Name two pronouns.” I said, “Who, me?”"
+  },
+  {
+    "type": "nerd",
+    "text": " What does a proud computer call his little son? A microchip off the old block."
+  },
+  {
+    "type": "nerd",
+    "text": " Heisenberg is pulled over by a cop who asks him, “Do you know how fast you were going?” Heisenberg replies, “No, but I know where I am.”"
+  },
+  {
+    "type": "nerd",
+    "text": " Did you hear about the man who got cooled to absolute zero? He´s 0K now."
+  },
+  {
+    "type": "nerd",
+    "text": " Why do programmers always mix up Halloween and Christmas? Because 31 OCT = 25 DEC."
+  },
+  {
+    "type": "nerd",
+    "text": " What do you get when you cross a joke with a rhetorical question?"
+  },
+  {
+    "type": "nerd",
+    "text": " There is a band called 1023Mb. They haven’t had any gigs yet."
+  },
+  {
+    "type": "nerd",
+    "text": " How does a network administrator nerd greet people who come to his house? Welcome to 127.0.0.1"
+  },
+  {
+    "type": "nerd",
+    "text": " Where does bad light end up? In prism."
+  },
+  {
+    "type": "nerd",
+    "text": " How can you tell if a computer geek is an extrovert? They stare at your shoes when you talk instead of their own."
+  },
+  {
+    "type": "nerd",
+    "text": " What is another name for a computer virus? A terminal illness."
+  },
+  {
+    "type": "nerd",
+    "text": " How many surrealists does it take to screw in a light bulb? A fish."
+  },
+  {
+    "type": "nerd",
+    "text": " Why did the bear dissolve in water? It was polar."
+  },
+  {
+    "type": "nerd",
+    "text": " What do you get if you take your computer to an ice rink? A slipped disk."
+  },
+  {
+    "type": "nerd",
+    "text": " Why can’t cats work on the computer? They get too distracted chasing the mouse around."
+  },
+  {
+    "type": "nerd",
+    "text": " Schrodinger’s cat walks into a bar and doesn’t."
+  },
+  {
+    "type": "nerd",
+    "text": " Two chemists walk into a bar. The first one says, “I’ll have some H20.” The second one says, “I’ll have some H20 too.” The second one dies."
+  },
+  {
+    "type": "nerd",
+    "text": " Why did the programmer use the entire bottle of shampoo during one shower? Because the bottle said “Lather, Rinse, Repeat.”"
+  },
+  {
+    "type": "nerd",
+    "text": " Why did I divide Sin by Tan? Just Cos."
+  }
+]

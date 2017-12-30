@@ -1,0 +1,222 @@
+[
+  {
+    "type": "dumb",
+    "text": " What does a cannibal do after he dumps his girlfriend? Wipes his ass."
+  },
+  {
+    "type": "dumb",
+    "text": " Did you hear about the guy who broke both his left arm and left leg? He’s all right now."
+  },
+  {
+    "type": "dumb",
+    "text": " Girl: So, how many times a day do you shave? Man: Well, about 15-20 times every day. Girl: My god, are you some kind of crazy? Man: No, I’m a barber."
+  },
+  {
+    "type": "dumb",
+    "text": " I was wondering why the ball kept getting bigger and bigger. And then it hit me."
+  },
+  {
+    "type": "dumb",
+    "text": " Why does Humpty Dumpty love autumn? Because he had a great fall."
+  },
+  {
+    "type": "dumb",
+    "text": " What’s black, red, black, red, black, red? A zebra with a sun burn."
+  },
+  {
+    "type": "dumb",
+    "text": " People wonder why I call my toilet “The Jim” instead of “The John.” I do it so I can say “I go to the Jim first thing every morning.”"
+  },
+  {
+    "type": "dumb",
+    "text": " What’s the tallest building in the world? The library, cause it has the most stories."
+  },
+  {
+    "type": "dumb",
+    "text": " What is green and sits crying in the corner? The incredible Sulk."
+  },
+  {
+    "type": "dumb",
+    "text": " I went to the bank the other day and asked the teller to check my balance. The bitch pushed me, but I couldn’t really blame her."
+  },
+  {
+    "type": "dumb",
+    "text": " Why shouldn’t you write with a broken pencil? There’s no point."
+  },
+  {
+    "type": "dumb",
+    "text": " Why are pigs not allowed to ride bikes? Because they lack the thumbs to ring the bell."
+  },
+  {
+    "type": "dumb",
+    "text": " Money doesn’t grow on trees, right? So why does every bank have so many branches?"
+  },
+  {
+    "type": "dumb",
+    "text": " How do trees get online? They log in."
+  },
+  {
+    "type": "dumb",
+    "text": " What has four legs, one foot and one head? A bed."
+  },
+  {
+    "type": "dumb",
+    "text": " Why did the scarecrow keep getting promoted? Because he was outstanding in his field."
+  },
+  {
+    "type": "dumb",
+    "text": " What do you call a midget psychic who just escaped from prison? A small medium at large."
+  },
+  {
+    "type": "dumb",
+    "text": " Andy has 150 candy bars. He eats 125. What does Andy have now? Andy has diabetes now."
+  },
+  {
+    "type": "dumb",
+    "text": " Two men broke into a drugstore and stole all the Viagra. The police better be on the lookout for two hardened criminals."
+  },
+  {
+    "type": "dumb",
+    "text": " Why did the pig leave the party early? Because everyone thought he was a boar."
+  },
+  {
+    "type": "dumb",
+    "text": " One twin to the other: “You are ugly.”"
+  },
+  {
+    "type": "dumb",
+    "text": " What’s the difference between snowmen and snowwomen? Snowballs."
+  },
+  {
+    "type": "dumb",
+    "text": " How come oysters never donate to charity? Because they’re shellfish."
+  },
+  {
+    "type": "dumb",
+    "text": " Why can’t dinosaurs clap? Because they’re dead."
+  },
+  {
+    "type": "dumb",
+    "text": " Why are barns so noisy? Because all the cows have horns."
+  },
+  {
+    "type": "dumb",
+    "text": " What do computers snack on? Microchips."
+  },
+  {
+    "type": "dumb",
+    "text": " What did one Egyptian say to the other Egyptian after they both farted? “We have a toot in common.”"
+  },
+  {
+    "type": "dumb",
+    "text": " Why can’t you trust an atom? Because they make up literally everything."
+  },
+  {
+    "type": "dumb",
+    "text": " What did the big chimney say to the little chimney? You’re too young to smoke."
+  },
+  {
+    "type": "dumb",
+    "text": " What did the farmer say when he lost his sheep? Where’s my sheep?"
+  },
+  {
+    "type": "dumb",
+    "text": " What do you call a bear with no teeth? A gummy bear."
+  },
+  {
+    "type": "dumb",
+    "text": " What does a grape say after it’s stepped on? Nothing. It just lets out a little wine."
+  },
+  {
+    "type": "dumb",
+    "text": " Guess who I saw yesterday? Everyone I looked at."
+  },
+  {
+    "type": "dumb",
+    "text": " How do fish get high? Seaweed."
+  },
+  {
+    "type": "dumb",
+    "text": " Did you hear about the kidnapping at school? Everything’s fine. He woke up."
+  },
+  {
+    "type": "dumb",
+    "text": " Why is a giraffe’s neck so long? Because its head is so far up from its body."
+  },
+  {
+    "type": "dumb",
+    "text": " What happens when a frog’s car breaks down? It gets toad away."
+  },
+  {
+    "type": "dumb",
+    "text": " Why don’t teddy bears ever order dessert? Because they’re always stuffed."
+  },
+  {
+    "type": "dumb",
+    "text": " The frustrated cannibal threw up his arms."
+  },
+  {
+    "type": "dumb",
+    "text": " What did the janitor yell after he jumped out of the closet? “Supplies!”"
+  },
+  {
+    "type": "dumb",
+    "text": " What do you call someone wearing a belt with a watch attached to it? A waist of time."
+  },
+  {
+    "type": "dumb",
+    "text": " You know why when geese fly in a V, one side of the V is longer than the other? There’s more geese on that side."
+  },
+  {
+    "type": "dumb",
+    "text": " I never wanted to believe that my Dad was stealing from his job as a road worker. But when I got home, all the signs were there."
+  },
+  {
+    "type": "dumb",
+    "text": " What’s the difference between roast beef and pea soup? Anyone can roast beef but nobody can pee soup!"
+  },
+  {
+    "type": "dumb",
+    "text": " Why do scuba divers fall backwards off of the boat? Because if they fell forward, they’d still be on the boat."
+  },
+  {
+    "type": "dumb",
+    "text": " How can you get four suits for a dollar? Buy a deck of cards."
+  },
+  {
+    "type": "dumb",
+    "text": " What’s the difference between a teacher and a train? One says, “Spit out your gum” and the other says, “Choo choo choo.”"
+  },
+  {
+    "type": "dumb",
+    "text": " Why is Peter Pan always flying? Because he never lands."
+  },
+  {
+    "type": "dumb",
+    "text": " What’s the difference between a cat and a complex sentence? A cat has claws at the end of its paws. A complex sentence has a pause at the end of its clause."
+  },
+  {
+    "type": "dumb",
+    "text": " What do you say to a drunk who walks into a bar with jumper cables around his neck? “You can stay. Just don’t try to start anything.”"
+  },
+  {
+    "type": "dumb",
+    "text": " What did batman say to robin before they got in the batmobile? Get in the batmobile."
+  },
+  {
+    "type": "dumb",
+    "text": " What’s so great about being a hitman? They all kill it."
+  },
+  {
+    "type": "dumb",
+    "text": " Why didn’t the melons get married? Because they cantaloupe."
+  },
+  {
+    "type": "dumb",
+    "text": " If April showers bring May flowers, what comes next in June? Pilgrims."
+  },
+  {
+    "type": "dumb",
+    "text": " A man got hit in the head with a can of Coke. Thank goodness it was a soft drink."
+  }
+]

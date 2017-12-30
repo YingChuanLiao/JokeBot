@@ -1,0 +1,52 @@
+{
+  "sender": {
+    "id": "1533570346718866"
+  },
+  "recipient": {
+    "id": "153083798674247"
+  },
+  "timestamp": 1514593369651,
+  "message": {
+    "quick_reply": {
+      "payload": "rating"
+    },
+    "mid": "mid.$cAADRyabDNmdm1hIGM1gpMy-CdpqG",
+    "seq": 867640,
+    "text": "Main Menu",
+    "nlp": {
+      "entities": {
+        "rating": [
+          {
+            "suggested": true,
+            "confidence": 0.64878391926711,
+            "value": "Menu",
+            "type": "value",
+            "_entity": "rating",
+            "_body": "Menu",
+            "_start": 5,
+            "_end": 9
+          }
+        ],
+        "user_greetings": [
+          {
+            "confidence": 0.29040117409049,
+            "value": "true",
+            "_entity": "user_greetings"
+          },
+          {
+            "confidence": 0.24977342797113,
+            "value": "false",
+            "_entity": "user_greetings"
+          }
+        ],
+        "greetings": [
+          {
+            "confidence": 0.0017728473339443,
+            "value": "true",
+            "_entity": "greetings"
+          }
+        ]
+      }
+    }
+  }
+}
