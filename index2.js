@@ -331,6 +331,7 @@ function handleMessage(req, res){
             let text = event.message.text.toLowerCase().trim();
             //console.log("someone says: " + text);
             if (firstVisit || text.includes("menu")){
+                readJokeCount = 0;
                 troubleCount = 0;
                 if (firstVisit)
                     firstVisit = false;
