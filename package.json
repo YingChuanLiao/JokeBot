@@ -9,6 +9,7 @@
     "async": "~0.2.8",
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
+    "deferred": "^0.7.9",
     "express": "^3.2.6",
     "node-wit": "^4.3.0",
     "request": "^2.83.0",

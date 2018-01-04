@@ -7,6 +7,7 @@ const fs = require("fs");
 //const cheerio = require("cheerio");
 const {Wit, log} = require('node-wit');
 const app = express();
+const deferred = require("deferred");
 app.set('port', (process.env.PORT || 5000));
 // Allows us to process the data
 app.use(bodyParser.urlencoded({extended: true}));
@@ -96,14 +97,7 @@ function sendStart(){
             }
         }
     };
-    request(options, function(error, response, body) {
-        if (error) {
-            console.log(error.message);
-        }
-        else if (response.body.error){
-        	console.log("response body error");
-        }
-    });
+    return manageResponse(options);
 }
 sendStart();
 function uploadGIF(){
@@ -124,17 +118,21 @@ function uploadGIF(){
             message:messageData
         }
     };
-    request(options, function(error, response, body) {
-        if (error) {
-            console.log(error.message);
-        }
-        else if (response.body.error){
-        	console.log(response.body.error);
-        }
-        else{
+    return new Promise((resolve, reject) => {
+        request (options, (error, response, body) => {
+            if (error) { 
+                console.log("Error sending message: " + response.error); 
+                return reject(response.error); 
+            }
+            else if (response.body.error) { 
+                console.log('Response body Error: ' + response.body.error); 
+                return reject(response.body.error); 
+            }
             attachment_ID = body.attachment_id;
-            //console.log(body);
-        }
+            console.log(body);
+            console.log("Message sent successfully in uploadGIF "); 
+            return resolve(response);
+        });    
     });
 }
 uploadGIF();
@@ -153,6 +151,7 @@ app.get('/webhook', function(req, res) {
 	res.send("Wrong token");
 });
 function sendVideoMessage(id){
+    console.log("sendVideoMessage");
     let messageData = {
         "attachment": {
             "type": "template",
@@ -171,13 +170,14 @@ function sendVideoMessage(id){
             }
         }
     };
-    sendRequest(id,messageData);
+    return sendR(id,messageData);
 }
 
 
 
 
 function sendGenericMessage(id,purpose){
+    console.log("sendGenericMessage");
     let messageData = {
         "attachment":{
             "type":"template",
@@ -225,7 +225,7 @@ function sendGenericMessage(id,purpose){
         messageData.attachment.payload.elements = myelement;
     }
     
-    sendRequest(id,messageData);
+    return sendR(id,messageData);
 }
 //edit
 
@@ -247,7 +247,7 @@ function sendImage(id,isgoodJoke){
             }
         }
     };
-    sendRequest(id,messageData);
+    return sendR(id,messageData);
 }
 
 function sendQuickReply(id,text,content){
@@ -269,7 +269,7 @@ function sendQuickReply(id,text,content){
             payload:"rating",
         });
     });
-    sendRequest(id,messageData);
+    return sendR(id,messageData);
 }
 
 
@@ -279,7 +279,7 @@ function sendQuickReply(id,text,content){
 function sendText(id,text) {
     console.log("I am sendText");
     let messageData = {text: text};
-    sendRequest(id,messageData);
+    return sendR(id,messageData);
 }
 function sendButtonMessage(id,text,type,buttonContent){
     let messageData = {
@@ -310,7 +310,7 @@ function sendButtonMessage(id,text,type,buttonContent){
             title:"Google Translate"
         });
     }
-    sendRequest(id,messageData);
+    return sendR(id,messageData);
 }
 function sendJokes(id,event){
     var options = {
@@ -320,19 +320,20 @@ function sendJokes(id,event){
             'Accept': 'text/plain',
         }
     };
-    request(options, function(error, response, body) {
-        if (error) {
-            console.log(error);
-        }
-        try {
-            let messageData = {text: body};
-            sendRequest(id,messageData);
-        }
-        catch (err) {
-            let messageData ={text: "Something went wrong, please try again."};
-            console.log("error : " + err.message);
-            sendRequest(id, messageData);
-        }
+    return new Promise((resolve, reject) => {
+        request (options, (error, response, body) => {
+            if (error) { 
+                console.log("Error sending message: " + response.error); 
+                return reject(response.error); 
+            }
+            else if (response.body.error) { 
+                console.log('Response body Error: ' + response.body.error); 
+                return reject(response.body.error); 
+            }
+            let messageData = {text:body};
+            console.log("Message sent successfully in  sendJokes");
+            return resolve(sendR(id,messageData));
+        });    
     });
 }
 
@@ -346,35 +347,95 @@ function sendAction(id){
             sender_action: "typing_on"
         }
     };
-    request(options, function(error, response, body) {
-        if (error) {
-            console.log(error.message);
-        }
-        else if (response.body.error){
-        	console.log("response body error");
-        }
-    });
+    return manageResponse(options);
 }
 
-function sendRequest(id,messageData){
+// function sendRequest(id,messageData){
+//     var options = {
+//   	    url: "https://graph.facebook.com/v2.6/me/messages",
+//   	    qs : {access_token: FB_TOKEN},
+//         method: 'POST',
+//         json: {
+//             recipient: {id: id},
+//             message: messageData,
+//         }
+//     };
+//     request(options, function(error, response, body) {
+//         if (error) {
+//             console.log(error.message);
+//         }
+//         else if (response.body.error){
+//         	console.log(response.body.error);
+//         }
+//         else{
+//             console.log(body);
+//         }
+//     });
+// }
+function sendR (userId,messageData){
     var options = {
   	    url: "https://graph.facebook.com/v2.6/me/messages",
   	    qs : {access_token: FB_TOKEN},
-        method: 'POST',
-        json: {
-            recipient: {id: id},
+        method : "POST",
+        json : {
+            recipient: { id : userId },
             message: messageData,
         }
     };
-    request(options, function(error, response, body) {
-        if (error) {
-            console.log(error.message);
-        }
-        else if (response.body.error){
-        	console.log(response.body.error);
-        }
+    return manageResponse(options);
+}
+
+function manageResponse(options){
+    console.log(options);
+    return new Promise((resolve, reject) => {
+        request (options, (error, response, body) => {
+            if (error) { 
+                console.log("Error sending message: " + error); 
+                return reject("no"); 
+            }
+            else if (response.body.error) { 
+                console.log('Response body Error: ' + response.body.error); 
+                return reject("no"); 
+            }
+            console.log("Message sent successfully to "); 
+            return resolve("hi");
+        });    
     });
 }
+
+
+
+function doNext(previousValue) {
+    var dfd = new deferred();
+ 
+    // perform some async logic; resolve the promise
+    //setTimeout(function () {
+        var next = String.fromCharCode(previousValue.charCodeAt(previousValue.length - 1) + 1);
+        dfd.resolve(previousValue + next);
+    //}, 50);
+ 
+    return dfd.promise;
+}
+ 
+var promise = doNext('a');
+ 
+for (var i = 0; i < 9; i++) {
+    promise = promise.then(doNext);
+}
+ 
+promise.then(function (finalResult) {
+    // 'doNext' will have been invoked 10 times, each
+    // invocation only occurring after the previous one completed
+ 
+    // 'finalResult' will be the value returned
+    // by the last invocation of 'doNext': 'abcdefghijk'
+    console.log(finalResult);
+});
+
+
+
+
+
 
 // used for query app
 app.get("/query/:q",function(req,res){
@@ -408,7 +469,7 @@ function rating(rateInfo){
 
 
 function handleMessage(req, res){
-    console.log(req.body);
+    //console.log(req.body);
     let event = req.body.entry[0].messaging[0];
     let id = event.sender.id;
     if (event.message){
@@ -424,25 +485,33 @@ function handleMessage(req, res){
                     giveRating = false;
                     let brag = "I've told you I am a joke master!";
                     let messup = "My bad";
-                    sendAction(id);
-                    sendText(id,r? brag:messup);
-                    sendAction(id);
-                    sendImage(id,r);
-                    setTimeout(function(){
-                        sendAction(id);
+                    sendAction(id).then(function(){
+                        return sendText(id,r? brag:messup);
+                    }).then(function(){
+                        return sendAction(id);
+                    }).then(function(){
+                        return sendImage(id,r);
+                    }).then(function(){
+                        return sendAction(id);
+                    }).then(function(){
                         let content = ["More jokes", "Main Menu"];
-                        sendQuickReply(id,"Wanna try other jokes?",content);
-                    },4000);
+                        return sendQuickReply(id,"Wanna try other jokes?",content);
+                    }).catch(function(err){
+                        console.log(err);
+                    });
                 }
                 // not understanding what does the user rate
                 else{
-                    sendAction(id);
-                    sendText(id,NOTUNDERSTAND);
-                    sendAction(id);
-                    let content = ["good","bad"];
-                    setTimeout(function(){
-                        sendQuickReply(id,"Do you mean it is a good joke?",content);
-                    },2000);
+                    sendAction(id).then(function(){
+                        return sendText(id,NOTUNDERSTAND);
+                    }).then(function(){
+                        return sendAction(id);
+                    }).then(function(){
+                        let content = ["good","bad"];
+                        return sendQuickReply(id,"Do you mean it is a good joke?",content);
+                    }).catch(function(err){
+                        console.log(err);
+                    });
                 } 
             }
             // more jokes (random)
@@ -450,39 +519,46 @@ function handleMessage(req, res){
                 var keys = Object.keys(JOKEINFO);
                 var topic = keys[keys.length * Math.random()<<0];
                 var index = Math.random() * JOKEINFO[topic].amount<<0;
-                console.log(JOKEINFO[topic].amount);
-                sendAction(id);
-                sendText(id,JOKEINFO[topic].jokes[index].text);
-                sendAction(id);
-                let content = ["More jokes","Main Menu"];
-                setTimeout(function(){
-                    sendQuickReply(id,"Wanna try other jokes?",content);  
-                },2000);
+                sendAction(id).then(function(){
+                    return sendText(id,JOKEINFO[topic].jokes[index].text);
+                }).then(function(){
+                    return sendAction(id);
+                }).then(function(){
+                    let content = ["More jokes","Main Menu"];
+                    return sendQuickReply(id,"Wanna try other jokes?",content); 
+                });
             }
             else if (text.includes("menu")){
-                sendAction(id);
-                setTimeout(function(){
-                    sendGenericMessage(id,"start");
-                    sendVideoMessage(id);
-                },2000);
+                sendAction(id).then(function(){
+                    return sendGenericMessage(id,"start");
+                }).then(function(data){
+                    return sendVideoMessage(id);
+                }).catch(function(err){
+                    console.log(err);
+                });
             }
             // This design is kinda weird. Because there is only one chance for free-text....
             else {
                 troubleCount++;
-                sendAction(id);
-                sendText(id,NOTUNDERSTAND);
-                sendAction(id);
-                setTimeout(function(){
+                sendAction(id).then(function(){
+                    return sendText(id,NOTUNDERSTAND);
+                }).then(function(){
+                    return sendAction(id);
+                }).then(function(){
                     if (troubleCount < troubleThreshold)
-                        sendButtonMessage(id,FOLLOWUP,"web_url",[]);
+                        return sendButtonMessage(id,FOLLOWUP,"web_url",[]);
                     else{
-                        sendText(id,"It seems like you are having some trouble.");
-                        sendAction(id);
-                        let content = ["Main Menu"];
-                        sendQuickReply(id,"Press the button to go back to the main Menu!",content);
-                        
+                        // there is a issue
+                        return sendText(id,"It seems like you are having some trouble.").then(function(){
+                            return sendAction(id);
+                        }).then(function(){
+                            let content = ["Main Menu"];
+                            return sendQuickReply(id,"Press the button to go back to the main Menu!",content);
+                        });
                     }
-                },1000);
+                }).catch(function(err){
+                    console.log(err);
+                });
             }
         }
     }
@@ -492,47 +568,77 @@ function handleMessage(req, res){
        // if it is the first time
         troubleCount = 0;
         if (event.postback.title == "Get Started"){
-            sendAction(id);
-            setTimeout(function(){
-                sendGenericMessage(id,"start");
-                
-                sendVideoMessage(id);
-            },2000);
+            sendAction(id).then(function(){
+                return sendGenericMessage(id,"start");
+            }).then(function(data){
+                return sendVideoMessage(id);
+            }).catch(function(err){
+                console.log(err);
+            });
         }
         else if (event.postback.payload == "first"){
         // else if (readJokeCount == 0){
             readJokeCount++;
-            sendAction(id);
-            sendJokes(id,event);
-            setTimeout(function(){
-                sendAction(id);
-                sendText(id,ASKJOKES);
-                sendAction(id);
-                sendGenericMessage(id,"jokes");
-                //sendButtonMessage(id,ASKJOKES,"postback",JOKETYPE);
-            },300);
+            sendAction(id).then(function(){
+                return sendJokes(id,event);
+            }).then(function(){
+                return sendAction(id);
+            }).then(function(){
+                return sendText(id,ASKJOKES);
+            }).then(function(){
+                return sendAction(id);
+            }).then(function(){
+                return sendGenericMessage(id,"jokes");
+            }).catch(function(err){
+                console.log(err);
+            });
         }
         else{
             // send second joke if he does not give a rating
             readJokeCount++;
             // random pick one jokes from the jokeSet
             let index = Math.random() *JOKEINFO[event.postback.payload].amount << 0;
-            sendAction(id);
-            sendText(id,JOKEINFO[event.postback.payload].jokes[index].text); // becuase the payload is joke!
-            if (readJokeCount == 2){
-                setTimeout(function(){
-                    sendAction(id);
-                    sendText(id,"How do you feel about my joke?");
-                },300);
-                giveRating = true;
-            }
-            else{
-                let content = ["More jokes","Main Menu"];
-                setTimeout(function(){
-                    sendQuickReply(id,"Wanna try other jokes?",content);  
-                },2000);
+            sendAction(id).then(function(){
+                return sendText(id,JOKEINFO[event.postback.payload].jokes[index].text);
+            }).catch(function(err){
+                console.log(err);
+            });
+            //if (readJokeCount == 2){
+            sendAction(id).then(function(){
+                if (readJokeCount == 2){
+                    giveRating = true;
+                    return sendText(id,"How do you feel about my joke?");
+                }
+                else{
+                    let content = ["More jokes","Main Menu"];
+                    return sendQuickReply(id,"Wanna try other jokes?",content); 
+                }
+            }).catch(function(err){
+                console.log(err);
+            });
+            //}
+            //else{
+                //let content = ["More jokes","Main Menu"];
+                //setTimeout(function(){
+                    //sendQuickReply(id,"Wanna try other jokes?",content);  
+                //},2000);
                 
-            }
+            //}
+            // sendText(id,JOKEINFO[event.postback.payload].jokes[index].text); // becuase the payload is joke!
+            // if (readJokeCount == 2){
+            //     //setTimeout(function(){
+            //         sendAction(id);
+            //         sendText(id,"How do you feel about my joke?");
+            //     //},300);
+            //     giveRating = true;
+            // }
+            // else{
+            //     let content = ["More jokes","Main Menu"];
+            //     //setTimeout(function(){
+            //         sendQuickReply(id,"Wanna try other jokes?",content);  
+            //     //},2000);
+                
+            // }
         } 
     }
     res.end("received!");
@@ -545,9 +651,6 @@ app.post('/webhook',handleMessage);
 //The Messenger Platform sends events to your webhook to notify your bot when a variety of interactions 
 // or events happen,including when a person sends a message. Webhook events are sent by the Messenger Platform 
 //as POST requests to your webhook.
-
-
-
 
 
 
