@@ -1,11 +1,8 @@
 'use strict';
-const test = "test";
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const fs = require("fs");
-//const cheerio = require("cheerio");
-//const {Wit, log} = require('node-wit');
 const app = express();
 app.set('port', (process.env.PORT || 5000));
 // Allows us to process the data
@@ -54,12 +51,11 @@ let firstVisit = true;
 let readJokeCount = 0;
 let giveRating = false;
 let troubleCount = 0;
-let attachment_ID = "";
 
 function rating(rateInfo){
     // if user do not rate
     if (!rateInfo) return null;
-    for (var i = 0; i < rateInfo.length; i++){
+    for (let i = 0; i < rateInfo.length; i++){
         if (rateInfo[i].value == "good" && rateInfo[i].confidence > 0.5)
             return true;
         else if (rateInfo[i].value == "bad" && rateInfo[i].confidence > 0.5)
@@ -70,7 +66,7 @@ function rating(rateInfo){
 }
 
 function sendJokes(id){
-    var options = {
+    let options = {
         url: "https://icanhazdadjoke.com/",
         headers: {
             'Accept': 'text/plain',
@@ -79,7 +75,7 @@ function sendJokes(id){
     return new Promise((resolve, reject) => {
         request (options, (error, response, body) => {
             if (error) { 
-                console.log("Error sending message: " + response.error); 
+                console.log("Error sending message: " +error); 
                 return reject(response.error); 
             }
             else if (response.body.error) { 
@@ -93,7 +89,7 @@ function sendJokes(id){
 }
 
 function sendAction(id){
-    var options = {
+    let options = {
   	    url: "https://graph.facebook.com/v2.6/me/messages",
   	    qs : {access_token: FB_TOKEN},
         method: 'POST',
@@ -106,7 +102,7 @@ function sendAction(id){
 }
 
 function sendStart(){
-    var options = {
+    let options = {
   	    url: "https://graph.facebook.com/v2.6/me/messenger_profile",
   	    qs : {access_token: FB_TOKEN},
         method: 'POST',
@@ -120,7 +116,6 @@ function sendStart(){
 }
 
 function uploadGIF(){
-    console.log("I am upload");
     let messageData = {
         "attachment":{
             "type":"image", 
@@ -130,7 +125,7 @@ function uploadGIF(){
             }
         }
     };
-    var options = {
+    let options = {
   	    url: "https://graph.facebook.com/v2.6/me/message_attachments",
   	    qs : {access_token: FB_TOKEN},
         method: 'POST',
@@ -141,20 +136,19 @@ function uploadGIF(){
     return new Promise((resolve, reject) => {
         request (options, (error, response, body) => {
             if (error) { 
-                console.log("Error sending message: " + response.error); 
+                console.log("Error sending message: " + error); 
                 return reject(response.error); 
             }
             else if (response.body.error) { 
                 console.log('Response body Error: ' + response.body.error); 
                 return reject(response.body.error); 
             }
-            //attachment_ID = body.attachment_id;
             return resolve(body.attachment_id);
         });    
     });
 }
 sendStart();
-var promise = uploadGIF();
+let promise = uploadGIF();
 
 // Facebook 
 
@@ -186,9 +180,6 @@ function sendVideoMessage(id,attachment_ID){
     return sendRequest(id,messageData);
 }
 
-
-
-
 function sendGenericMessage(id,purpose){
     let messageData = {
         "attachment":{
@@ -205,7 +196,7 @@ function sendGenericMessage(id,purpose){
         }
     };
     //let element = messageData.attachment.payload.elements; 
-    var myelement = [];
+    let myelement = [];
     if (purpose == "start"){
         let content = {}; 
         content["title"] = "Joke Master";
@@ -213,7 +204,7 @@ function sendGenericMessage(id,purpose){
         myelement.push(content);
     }
     else if (purpose == "jokes"){
-        for (var key in JOKEINFO){
+        for (let key in JOKEINFO){
             let content = {};
             content["title"] = key,
             content["image_url"] = JOKEINFO[key].url;
@@ -302,7 +293,7 @@ function sendButtonMessage(id,text,type,buttonContent){
 
 
 function sendRequest (userId,messageData){
-    var options = {
+    let options = {
   	    url: "https://graph.facebook.com/v2.6/me/messages",
   	    qs : {access_token: FB_TOKEN},
         method : "POST",
@@ -332,15 +323,12 @@ function manageResponse(options){
 
 
 function handleMessage(req, res){
-    //console.log(req.body);
     let event = req.body.entry[0].messaging[0];
     let id = event.sender.id;
     if (event.message){
         fs.writeFileSync("message",JSON.stringify(event,null,2));
-        //console.log(JSON.stringify(event));
         if (event.message.text) {
             let text = event.message.text.toLowerCase().trim();
-            console.log("someone says: " + text);
             if (firstVisit || text.includes("menu")){
                 troubleCount = 0;
                 if (firstVisit)
@@ -348,22 +336,15 @@ function handleMessage(req, res){
                 sendAction(id).then(function(){
                     return sendGenericMessage(id,"start");
                 }).then(function(){
-                    // should handle the issue
-                    // write another promise!
                     return promise;
                 }).then(function(videoID){
-                    console.log(videoID);
                     return sendVideoMessage(id,videoID);
-                    //while(attachment_ID != ""){
-                        // console.log("frfoijroifjrif4");
-                        // return sendVideoMessage(id);
-                    //}
                 }).catch(function(err){
                     console.log(err);
                 });
             }
             else if(giveRating){
-                var r = rating(event.message.nlp.entities.rating);
+                let r = rating(event.message.nlp.entities.rating);
                 // if user make a good/bad rating
                 if (typeof(r) === 'boolean'){
                     giveRating = false;
@@ -400,9 +381,9 @@ function handleMessage(req, res){
             }
             // more jokes (random)
             else if (text.includes("joke")){
-                var keys = Object.keys(JOKEINFO);
-                var topic = keys[keys.length * Math.random()<<0];
-                var index = Math.random() * JOKEINFO[topic].amount<<0;
+                let keys = Object.keys(JOKEINFO);
+                let topic = keys[keys.length * Math.random()<<0];
+                let index = Math.random() * JOKEINFO[topic].amount<<0;
                 sendAction(id).then(function(){
                     return sendText(id,JOKEINFO[topic].jokes[index].text);
                 }).then(function(){
@@ -495,7 +476,7 @@ function handleMessage(req, res){
 }
 
 app.post('/webhook',handleMessage);
-//The Messenger Platform sends events to your webhook to notify your bot when a variety of interactions 
+//The Messenger Platform sends events to your webhook to notify your bot when a letiety of interactions 
 // or events happen,including when a person sends a message. Webhook events are sent by the Messenger Platform 
 //as POST requests to your webhook.
 app.listen(app.get('port'), function() {

@@ -5,13 +5,13 @@
   "recipient": {
     "id": "153083798674247"
   },
-  "timestamp": 1515051711066,
+  "timestamp": 1515089772531,
   "message": {
     "quick_reply": {
       "payload": "rating"
     },
-    "mid": "mid.$cAADRyabDNmdm8WPCWlgwB56NNKOH",
-    "seq": 875477,
+    "mid": "mid.$cAADRyabDNmdm86iH81gwmM_qi8t6",
+    "seq": 875749,
     "text": "Main Menu",
     "nlp": {
       "entities": {
