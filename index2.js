@@ -72,7 +72,6 @@ function rating(rateInfo){
 function sendJokes(id){
     var options = {
         url: "https://icanhazdadjoke.com/",
-        //json: true, // specify return format
         headers: {
             'Accept': 'text/plain',
         }
