@@ -329,6 +329,7 @@ function handleMessage(req, res){
         fs.writeFileSync("message",JSON.stringify(event,null,2));
         if (event.message.text) {
             let text = event.message.text.toLowerCase().trim();
+            //console.log("someone says: " + text);
             if (firstVisit || text.includes("menu")){
                 troubleCount = 0;
                 if (firstVisit)
@@ -421,7 +422,8 @@ function handleMessage(req, res){
         firstVisit = false;
         //event.postback : { payload: 'good', title: 'good joke' }
         troubleCount = 0;
-        if (event.postback.title == "Get Started"){
+        // console.log(event.postback);
+        if (event.postback.payload == "get started"){
             sendAction(id).then(function(){
                 return sendGenericMessage(id,"start");
             }).then(function(){
@@ -460,7 +462,7 @@ function handleMessage(req, res){
             }).then(function(){
                 if (readJokeCount == 2){
                     giveRating = true;
-                    return sendText(id,"How do you feel about my joke?");
+                    return sendText(id,"How do you feel about my joke? Give any comments you like!");
                 }
                 else{
                     let content = ["More jokes","Main Menu"];

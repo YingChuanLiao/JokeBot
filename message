@@ -5,43 +5,42 @@
   "recipient": {
     "id": "153083798674247"
   },
-  "timestamp": 1515089772531,
+  "timestamp": 1515096072234,
   "message": {
     "quick_reply": {
       "payload": "rating"
     },
-    "mid": "mid.$cAADRyabDNmdm86iH81gwmM_qi8t6",
-    "seq": 875749,
-    "text": "Main Menu",
+    "mid": "mid.$cAADRyabDNmdm9AioKlgwsNgCVH6y",
+    "seq": 875989,
+    "text": "good",
     "nlp": {
       "entities": {
         "rating": [
           {
-            "suggested": true,
-            "confidence": 0.64878391926711,
-            "value": "Menu",
+            "confidence": 0.99625960235041,
+            "value": "good",
             "type": "value",
             "_entity": "rating",
-            "_body": "Menu",
-            "_start": 5,
-            "_end": 9
+            "_body": "good",
+            "_start": 0,
+            "_end": 4
           }
         ],
         "user_greetings": [
           {
-            "confidence": 0.29040117409049,
-            "value": "true",
+            "confidence": 0.01305806187888,
+            "value": "false",
             "_entity": "user_greetings"
           },
           {
-            "confidence": 0.24977342797113,
-            "value": "false",
+            "confidence": 0.012870958431215,
+            "value": "true",
             "_entity": "user_greetings"
           }
         ],
         "greetings": [
           {
-            "confidence": 0.0017728473339443,
+            "confidence": 0.46561479453028,
             "value": "true",
             "_entity": "greetings"
           }
