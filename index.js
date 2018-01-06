@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const fs = require("fs");
-//const cheerio = require("cheerio");
+const cheerio = require("cheerio");
 const {Wit, log} = require('node-wit');
 const app = express();
 const deferred = require("deferred");
@@ -40,31 +40,31 @@ let JOKEINFO ={
 };
 
 
-const JOKETYPE = ["nerd","math","dumb"];
-// JOKETYPE.forEach(function(type){
-//     console.log(type);
-//     var url = "https://top-funny-jokes.com/"+type+"-jokes/";
-//     request(url, function(err,response,body){
-//         var $ = cheerio.load(body);
-//         var jokes = $(".su-list.su-list-style- ul li");
-//         var count = 0;
-//         //console.log(jokes.text());
-//         //var data = [];
-//         jokes.each(function(){
-//             jokeSet[type][count++] = $(this).text();// issue: sometimes the scraping will fail.
+const JOKETYPE = ["fat","dad","stupid"];
+JOKETYPE.forEach(function(type){
+    console.log(type);
+    var url = "https://top-funny-jokes.com/"+type+"-jokes/";
+    request(url, function(err,response,body){
+        var $ = cheerio.load(body);
+        var jokes = $(".su-list.su-list-style- ul li");
+        var count = 0;
+        //console.log(jokes.text());
+        var data = [];
+        jokes.each(function(){
+        //     jokeSet[type][count++] = $(this).text();// issue: sometimes the scraping will fail.
             
-//             // var obj = {
-//             //     type: type,
-//             //     text: $(this).text()
-//             // };
-//             // data.push(obj);
-//             //console.log(type);
-//             //console.log($(this).text());
-//             if (count == 10){return false;}
-//         });
-//         //fs.appendFileSync(type+".txt",JSON.stringify(data,null,2));
-//     });
-// });
+            var obj = {
+                type: type,
+                text: $(this).text()
+            };
+            data.push(obj);
+            //console.log(type);
+            //console.log($(this).text());
+            //if (count == 10){return false;}
+        });
+        fs.appendFileSync(type+".txt",JSON.stringify(data,null,2));
+    });
+});
 
 // ROUTES
 

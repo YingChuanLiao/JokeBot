@@ -11,8 +11,11 @@ app.use(bodyParser.json());
 let nerdJokes = JSON.parse(fs.readFileSync("nerd.txt","utf8"));
 let mathJokes = JSON.parse(fs.readFileSync("math.txt","utf8"));
 let dumbJokes = JSON.parse(fs.readFileSync("dumb.txt","utf8"));
+let stupidJokes = JSON.parse(fs.readFileSync("stupid.txt","utf8"));
+let dadJokes = JSON.parse(fs.readFileSync("dad.txt","utf8"));
+let fatJokes = JSON.parse(fs.readFileSync("fat.txt","utf8"));
 
-let JOKEINFO ={
+let jokesInfo ={
     "nerd":{
         url: "https://i.pinimg.com/736x/bb/16/31/bb163181363bd02bdab24468ff05aa7c.jpg",
         subtitle:"You can always see different groups of people gathered in the schoolyard. We have the jocks, the goth, and so on. I dedicate these nerd jokes to all the nerds out there. Without them, we would not have the technology we have today, iPhones, cars, computer and so on. I myself was a bit of a nerd and hey I’m fine today.",
@@ -34,6 +37,28 @@ let JOKEINFO ={
     }
 };
 
+let otherJokesInfo = {    
+    "dad":{
+        url: "https://media.giphy.com/media/xT5LMqMxZPWpipTLCU/giphy.gif",
+        subtitle:"You can always see different groups of people gathered in the schoolyard. We have the jocks, the goth, and so on. I dedicate these nerd jokes to all the nerds out there. Without them, we would not have the technology we have today, iPhones, cars, computer and so on. I myself was a bit of a nerd and hey I’m fine today.",
+        jokes: dadJokes,
+        amount: dadJokes.length
+    },
+    "stupid":{
+        url: "https://memeguy.com/photos/thumbs/how-i-feel-every-time-i-get-a-few-upvotes-62108.jpg",
+        subtitle:"Some jokes are funny, some are silly, but some are just plain stupid. They are so stupid that they actually become funny. We all have different humor; the one thing you may find funny another person don´t this is why I got different category of jokes.",
+        jokes: stupidJokes,
+        amount: stupidJokes.length
+    },
+    "fat":{
+        url: "https://pbs.twimg.com/media/BSa9H0MCcAAsH6L.jpg:large",
+        subtitle:"This joke category is all about the fat. Yes indeed the Fat jokes, they are funny and somewhat cruel. However, before we begin I must say that these jokes are not intended to hurt or be used as such to hurt anyone’s feelings.",
+        jokes: fatJokes,
+        amount: fatJokes.length
+    }
+};
+
+
 // ROUTES
 
 app.get('/', function(req, res) {
@@ -42,15 +67,70 @@ app.get('/', function(req, res) {
 const WIT_TOKEN = "52X7TGVRNEDN3A7JPWXHSH23KUW4EJLW";
 const FB_TOKEN = "EAACNdAhOSBABAOPRZAgCeKevb7rfCABo41HtJjY3toe9EnhfcIJTIrIlsdRsBdZCjt0mQvQr9OgibodwtiS2TqPiyHIe86He5fUtty0D9qbnZAflSe8OASLTyIejFYGCMtkKz3Nr5tAePFaKxrwRZA4GHZAmfODeXd25yLIHGGbfOgkEaDuZCZC";
 const GREETINGS = "Hello! I am a joke master. Bringing happiness to people is always my pleasure."; 
-const STARTFIRSTJOKE = "Click button to get a joke!";
+const CLICKME = "Click me!!";
 const NOTUNDERSTAND = "Sorry I am not understanding what you're saying.";
-const FOLLOWUP = "As a employee in facebook I suppose not to recommend this tool to you. Please don't tell Mark Zuckerberg";
+const FOLLOWUP = "As an employee in facebook I suppose not to recommend this tool to you. Please don't tell Mark Zuckerberg";
 const ASKJOKES = "Well, I can also tell three kinds of jokes. Which one would you like to hear?";
 const TROUBLETHRESHOLD = 3;
+let askWithSimpson = false;
 let firstVisit = true;
-let readJokeCount = 0;
+let totalJokeCount = 0;
 let giveRating = false;
 let troubleCount = 0;
+let currentTopic = "";
+let personalReference ={};
+function switchTopics(pR,jokesInfo,otherJokesInfo){
+    let needSwitch = false;
+    let copyJI = JSON.parse(JSON.stringify(jokesInfo));
+    let copyOJI = JSON.parse(JSON.stringify(otherJokesInfo));
+    console.log(pR);
+    let removeKeys = [];
+    for (let key in pR){
+        if(pR[key] < 0){
+            needSwitch = true;
+            removeKeys.push(key);
+            delete pR[key];
+            delete jokesInfo[key];
+        }
+    }
+    let newKeys = [];
+    for (let i = 0; i < removeKeys.length; i++){
+        let newKeyList = Object.keys(otherJokesInfo);
+        let newkey = newKeyList[newKeyList.length * Math.random()<<0];
+        //console.log(newkey);
+        newKeys.push(newkey);
+        delete otherJokesInfo[newkey];
+    }
+    for (let i = 0; i < removeKeys.length; i++){
+        otherJokesInfo[removeKeys[i]] = copyJI[removeKeys[i]];
+        jokesInfo[newKeys[i]] = copyOJI[newKeys[i]];
+    }
+    return needSwitch;
+}
+
+function giveScore(r,personalReference,currentTopic,id){
+    console.log("I am working");
+    let score = r? 1:-1;
+    let keys = Object.keys(personalReference);
+    console.log(keys);
+    if (!keys.includes(currentTopic)){
+        personalReference[currentTopic] = score;
+    }
+    else{
+        personalReference[currentTopic]+=score;
+    }
+    sendAction(id).then(function(){
+        let content = ["More jokes", "Main Menu"];
+        return sendQuickReply(id,"Wanna try other jokes?",content);
+    }).catch(function(err){
+        console.log(err);
+    });
+}
+
+
+
+
+
 
 function rating(rateInfo){
     // if user do not rate
@@ -158,7 +238,7 @@ app.get('/webhook', function(req, res) {
 	}
 	res.send("Wrong token");
 });
-function sendVideoMessage(id,attachment_ID){
+function sendVideoMessage(id,attachment_ID,text){
     let messageData = {
         "attachment": {
             "type": "template",
@@ -169,8 +249,8 @@ function sendVideoMessage(id,attachment_ID){
                     "attachment_id": attachment_ID,
                     "buttons":[{
                         "type":"postback",
-                        "payload": "first",
-                        "title":"Yes! give me jokes!!"
+                        "payload": "first joke",
+                        "title":text
                         }
                     ]
                 }]
@@ -180,7 +260,7 @@ function sendVideoMessage(id,attachment_ID){
     return sendRequest(id,messageData);
 }
 
-function sendGenericMessage(id,purpose){
+function sendGenericMessage(id,info){
     let messageData = {
         "attachment":{
             "type":"template",
@@ -197,18 +277,18 @@ function sendGenericMessage(id,purpose){
     };
     //let element = messageData.attachment.payload.elements; 
     let myelement = [];
-    if (purpose == "start"){
+    if (info.purpose == "start"){
         let content = {}; 
         content["title"] = "Joke Master";
-        content["subtitle"] = GREETINGS;
+        content["subtitle"] = info.text;
         myelement.push(content);
     }
-    else if (purpose == "jokes"){
-        for (let key in JOKEINFO){
+    else if (info.purpose == "jokes"){
+        for (let key in info.jokes){
             let content = {};
             content["title"] = key,
-            content["image_url"] = JOKEINFO[key].url;
-            content["subtitle"] = JOKEINFO[key].subtitle;
+            content["image_url"] = info.jokes[key].url;
+            content["subtitle"] = info.jokes[key].subtitle;
             content["buttons"] = [
                 {
                 "type":"postback",
@@ -276,7 +356,7 @@ function sendButtonMessage(id,text,type,buttonContent){
             buttons.push({
                 type: type,
                 payload: content,
-                title: content+ " joke"
+                title: content
             });
             
         });
@@ -329,18 +409,21 @@ function handleMessage(req, res){
         fs.writeFileSync("message",JSON.stringify(event,null,2));
         if (event.message.text) {
             let text = event.message.text.toLowerCase().trim();
-            //console.log("someone says: " + text);
+            console.log("someone says: " + text);
             if (firstVisit || text.includes("menu")){
-                readJokeCount = 0;
                 troubleCount = 0;
                 if (firstVisit)
                     firstVisit = false;
                 sendAction(id).then(function(){
-                    return sendGenericMessage(id,"start");
+                    let info= {
+                        purpose:"start",
+                        text:GREETINGS
+                    };
+                    return sendGenericMessage(id,info);
                 }).then(function(){
                     return promise;
                 }).then(function(videoID){
-                    return sendVideoMessage(id,videoID);
+                    return sendVideoMessage(id,videoID,CLICKME);
                 }).catch(function(err){
                     console.log(err);
                 });
@@ -349,23 +432,29 @@ function handleMessage(req, res){
                 let r = rating(event.message.nlp.entities.rating);
                 // if user make a good/bad rating
                 if (typeof(r) === 'boolean'){
+                    console.log(askWithSimpson);
                     giveRating = false;
-                    let brag = "I've told you I am a joke master!";
-                    let messup = "My bad";
-                    sendAction(id).then(function(){
-                        return sendText(id,r? brag:messup);
-                    }).then(function(){
-                        return sendAction(id);
-                    }).then(function(){
-                        return sendImage(id,r);
-                    }).then(function(){
-                        return sendAction(id);
-                    }).then(function(){
-                        let content = ["More jokes", "Main Menu"];
-                        return sendQuickReply(id,"Wanna try other jokes?",content);
-                    }).catch(function(err){
-                        console.log(err);
-                    });
+                    if (askWithSimpson){
+                        askWithSimpson = false;
+                        let brag = "I've told you I am a joke master!";
+                        let messup = "My bad";
+                        sendAction(id).then(function(){
+                            return sendText(id,r? brag:messup);
+                        }).then(function(){
+                            return sendAction(id);
+                        }).then(function(){
+                            return sendImage(id,r);
+                        }).then(function(){
+                            return sendAction(id);
+                        }).then(function(){
+                            return giveScore(r,personalReference,currentTopic,id);
+                        }).catch(function(err){
+                            console.log(err);
+                        });
+                    }
+                    else{
+                        giveScore(r,personalReference,currentTopic,id);   
+                    }
                 }
                 // not understanding what does the user rate
                 else{
@@ -383,16 +472,18 @@ function handleMessage(req, res){
             }
             // more jokes (random)
             else if (text.includes("joke")){
-                let keys = Object.keys(JOKEINFO);
-                let topic = keys[keys.length * Math.random()<<0];
-                let index = Math.random() * JOKEINFO[topic].amount<<0;
+                totalJokeCount++;
+                let keys = Object.keys(jokesInfo);
+                currentTopic = keys[keys.length * Math.random()<<0];
+                let index = Math.random() * jokesInfo[currentTopic].amount<<0;
                 sendAction(id).then(function(){
-                    return sendText(id,JOKEINFO[topic].jokes[index].text);
+                    return sendText(id,jokesInfo[currentTopic].jokes[index].text);
                 }).then(function(){
                     return sendAction(id);
                 }).then(function(){
-                    let content = ["More jokes","Main Menu"];
-                    return sendQuickReply(id,"Wanna try other jokes?",content); 
+                    let content = ["lol","sucks"];
+                    giveRating = true;
+                    return sendQuickReply(id,"Comment!",content);
                 });
             }
             else {
@@ -405,7 +496,6 @@ function handleMessage(req, res){
                     if (troubleCount < TROUBLETHRESHOLD)
                         return sendButtonMessage(id,FOLLOWUP,"web_url",[]);
                     else{
-                        // there is a issue
                         return sendText(id,"It seems like you are having some trouble.").then(function(){
                             return sendAction(id);
                         }).then(function(){
@@ -423,22 +513,33 @@ function handleMessage(req, res){
         firstVisit = false;
         //event.postback : { payload: 'good', title: 'good joke' }
         troubleCount = 0;
-        // console.log(event.postback);
+        console.log(event.postback);
         if (event.postback.payload == "get started"){
             sendAction(id).then(function(){
-                return sendGenericMessage(id,"start");
+                let info= {
+                    purpose:"start",
+                    text:GREETINGS
+                };
+                return sendGenericMessage(id,info);
             }).then(function(){
                 return promise;
             }).then(function(videoID){
-                return sendVideoMessage(id,videoID);
+                return sendVideoMessage(id,videoID,CLICKME);
             }).catch(function(err){
                 console.log(err);
             });
         }
-        else if (event.postback.payload == "first"){
-            readJokeCount++;
+        else if (event.postback.payload == "first joke"){
             sendAction(id).then(function(){
-                return sendJokes(id,event);
+                if (totalJokeCount >= 3){
+                    totalJokeCount = 0;
+                    let needSwitch = switchTopics(personalReference,jokesInfo,otherJokesInfo);
+                    if (needSwitch)
+                        return sendText(id,"Hmm seems like you don't like certain topics... let me change it");
+                }
+                else{
+                    return sendJokes(id,event);
+                }
             }).then(function(){
                 return sendAction(id);
             }).then(function(){
@@ -446,29 +547,29 @@ function handleMessage(req, res){
             }).then(function(){
                 return sendAction(id);
             }).then(function(){
-                return sendGenericMessage(id,"jokes");
+                let info= {
+                    purpose:"jokes",
+                    jokes:jokesInfo//
+                };
+                return sendGenericMessage(id,info);
             }).catch(function(err){
                 console.log(err);
             });
         }
         else{
-            // send second joke if he does not give a rating
-            readJokeCount++;
+            // only fired once unless you restart or go back to the menu
+            currentTopic = event.postback.payload;
+            askWithSimpson = true;
+            totalJokeCount++;
             // random pick one jokes from the jokeSet
-            let index = Math.random() *JOKEINFO[event.postback.payload].amount << 0;
+            let index = Math.random() *jokesInfo[currentTopic].amount << 0;
             sendAction(id).then(function(){
-                return sendText(id,JOKEINFO[event.postback.payload].jokes[index].text);
+                return sendText(id,jokesInfo[currentTopic].jokes[index].text);
             }).then(function(){
                 return sendAction(id);
             }).then(function(){
-                if (readJokeCount == 2){
-                    giveRating = true;
-                    return sendText(id,"How do you feel about my joke? Give any comments you like!");
-                }
-                else{
-                    let content = ["More jokes","Main Menu"];
-                    return sendQuickReply(id,"Wanna try other jokes?",content); 
-                }
+                giveRating = true;
+                return sendText(id,"How do you feel about my joke? Give any comments you like!");
             }).catch(function(err){
                 console.log(err);
             });
@@ -484,4 +585,4 @@ app.post('/webhook',handleMessage);
 //as POST requests to your webhook.
 app.listen(app.get('port'), function() {
 	console.log("running: port");
-})
+});
