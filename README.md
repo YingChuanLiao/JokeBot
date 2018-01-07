@@ -6,17 +6,13 @@
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
 
+Hello there!
 
-Welcome to your Node.js project on Cloud9 IDE!
+This is jokebot I created. Here I would like to briefly explain my codes :)
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+1. I fetch jokes by two methods: the first one is to use public joke API (I think jokes from it is not really funny though.)
+2. Another is to crawl a website which contains joke by a package called cheerio.
+In the first place I would like to crawl jokes in real time but I found out that sometimes it doesn't work. So I just save it to txt file. 
 
-## Running the server
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
 
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
