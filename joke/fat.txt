@@ -1,0 +1,290 @@
+[
+  {
+    "type": "fat",
+    "text": " How do you seduce a fat woman? Piece of cake."
+  },
+  {
+    "type": "fat",
+    "text": " How do you find how many fat people are in America? Throw a cookie into the street."
+  },
+  {
+    "type": "fat",
+    "text": " How do you get a fat kid to lose weight? You pay the ice cream man to keep on driving."
+  },
+  {
+    "type": "fat",
+    "text": " Alcohol doesn’t make you FAT It makes you LEAN… against tables, chairs, floors, walls and ugly people!"
+  },
+  {
+    "type": "fat",
+    "text": " Behind every fat woman there is a beautiful woman. No seriously, you’re in the way."
+  },
+  {
+    "type": "fat",
+    "text": " You know you’re getting fat when you sit in the bath and the water in the toilet rises."
+  },
+  {
+    "type": "fat",
+    "text": " A guy goes up to this girl in a bar and says, “Would you like to dance?” The girl says, “I don’t like this song, but even if I did, I wouldn’t dance with you.” The guy says, “I’m sorry, you must have misunderstood me, I said you look fat in those pants.”"
+  },
+  {
+    "type": "fat",
+    "text": " Relationships are like fat people. Most of them don’t work out."
+  },
+  {
+    "type": "fat",
+    "text": " Why was the blonde jogging backwards? She wanted to gain weight!"
+  },
+  {
+    "type": "fat",
+    "text": " Every time someone calls me fat I get so depressed I cut myself… A piece of cake."
+  },
+  {
+    "type": "fat",
+    "text": " I can’t believe I forgot to go to the gym again today. That’s seven years in a row now."
+  },
+  {
+    "type": "fat",
+    "text": " How are fat girls and mopeds alike? They are fun to ride but you don’t want your friends to find out."
+  },
+  {
+    "type": "fat",
+    "text": " I’m not fat, I’m just 4 feet too short."
+  },
+  {
+    "type": "fat",
+    "text": " A woman is standing looking in the bedroom mirror… She is not happy with what she sees and says to her husband, “I feel horrible; I look old, fat and ugly… I really need you to pay me a compliment.” The husband replies, “Your eyesight’s damn near perfect.”"
+  },
+  {
+    "type": "fat",
+    "text": " I’ve been going out with my girlfriend for about three years now and I’ve started to have erection difficulties. We’ve got different ideas about what the problem is. She bought me some Viagra. And I’ve bought her a treadmill."
+  },
+  {
+    "type": "fat",
+    "text": " Only in American will you see “poor” fat people."
+  },
+  {
+    "type": "fat",
+    "text": " I’m not saying your wife’s fat but if I had to name the 5 fattest people I know, she’d be 3 of them."
+  },
+  {
+    "type": "fat",
+    "text": " If bars aren’t allowed to serve drunk people, then why is McDonald’s still allowed to serve fat people?"
+  },
+  {
+    "type": "fat",
+    "text": " I was at the customer-service desk, returning a pair of jeans that was too tight. “Was anything wrong with them?” the clerk asked. “Yes,” I said. “They hurt my feelings.”"
+  },
+  {
+    "type": "fat",
+    "text": " I was lying in bed with my wife last night. She looked at me seductively and said, “I’m wide awake, babe.” I said, “You’re wide when you’re asleep too.”"
+  },
+  {
+    "type": "fat",
+    "text": " Music teacher: ‘What’s your favorite musical instrument?’ Fat kid: ‘The lunch bell.’"
+  },
+  {
+    "type": "fat",
+    "text": " A guy is standing on the bathroom scales desperately sucking in his stomach. “That’s not going to help,” says his wife. “Yes, it will,” replies the man. “It’s the only way I can see the numbers!”"
+  },
+  {
+    "type": "fat",
+    "text": " What do you call two fat people having a chat? A heavy discussion."
+  },
+  {
+    "type": "fat",
+    "text": " After years of dieting, I found there was only one way to look thin: Hang out with fat people."
+  },
+  {
+    "type": "fat",
+    "text": " You have enough fat to make another human."
+  },
+  {
+    "type": "fat",
+    "text": " My boyfriend hates it when I make jokes about his weight. He needs to lighten up."
+  },
+  {
+    "type": "fat",
+    "text": " Your so fat you were rolling down a hill and you never stopped."
+  },
+  {
+    "type": "fat",
+    "text": " You never hear skinny people saying, “I’m just small boned.”"
+  },
+  {
+    "type": "fat",
+    "text": " You have more chins than Chinatown."
+  },
+  {
+    "type": "fat",
+    "text": " I’m not saying my girlfriend’s fat but she’s got so many double chins it looks like she’s staring at you over a plate of pancakes."
+  },
+  {
+    "type": "fat",
+    "text": " You’re so fat that your husband rolled over after sex, rolled over again and was STILL on top of you."
+  },
+  {
+    "type": "fat",
+    "text": " A rather obese man is very excited about his new job and wants to start work immediately. However, when he sits down at his computer, the only program installed was spreadsheets. Confused, the man calls over his boss and asks:”Why there is only excel installed on this computer?” His boss replies, “It was the only program in your size!”"
+  },
+  {
+    "type": "fat",
+    "text": " My 6-pack is very precious to me. That’s why I protect it with a layer of fat."
+  },
+  {
+    "type": "fat",
+    "text": " My New Year’s resolution is to help all my friends gain ten pounds so I look skinnier."
+  },
+  {
+    "type": "fat",
+    "text": " What do you call a fat psychic? A four chin teller."
+  },
+  {
+    "type": "fat",
+    "text": " You’re fat. It’s not because it runs in the family, you’re fat because nobody runs in your family."
+  },
+  {
+    "type": "fat",
+    "text": " How do you seduce a fat woman? Piece of cake."
+  },
+  {
+    "type": "fat",
+    "text": " How do you find how many fat people are in America? Throw a cookie into the street."
+  },
+  {
+    "type": "fat",
+    "text": " How do you get a fat kid to lose weight? You pay the ice cream man to keep on driving."
+  },
+  {
+    "type": "fat",
+    "text": " Alcohol doesn’t make you FAT It makes you LEAN… against tables, chairs, floors, walls and ugly people!"
+  },
+  {
+    "type": "fat",
+    "text": " Behind every fat woman there is a beautiful woman. No seriously, you’re in the way."
+  },
+  {
+    "type": "fat",
+    "text": " You know you’re getting fat when you sit in the bath and the water in the toilet rises."
+  },
+  {
+    "type": "fat",
+    "text": " A guy goes up to this girl in a bar and says, “Would you like to dance?” The girl says, “I don’t like this song, but even if I did, I wouldn’t dance with you.” The guy says, “I’m sorry, you must have misunderstood me, I said you look fat in those pants.”"
+  },
+  {
+    "type": "fat",
+    "text": " Relationships are like fat people. Most of them don’t work out."
+  },
+  {
+    "type": "fat",
+    "text": " Why was the blonde jogging backwards? She wanted to gain weight!"
+  },
+  {
+    "type": "fat",
+    "text": " Every time someone calls me fat I get so depressed I cut myself… A piece of cake."
+  },
+  {
+    "type": "fat",
+    "text": " I can’t believe I forgot to go to the gym again today. That’s seven years in a row now."
+  },
+  {
+    "type": "fat",
+    "text": " How are fat girls and mopeds alike? They are fun to ride but you don’t want your friends to find out."
+  },
+  {
+    "type": "fat",
+    "text": " I’m not fat, I’m just 4 feet too short."
+  },
+  {
+    "type": "fat",
+    "text": " A woman is standing looking in the bedroom mirror… She is not happy with what she sees and says to her husband, “I feel horrible; I look old, fat and ugly… I really need you to pay me a compliment.” The husband replies, “Your eyesight’s damn near perfect.”"
+  },
+  {
+    "type": "fat",
+    "text": " I’ve been going out with my girlfriend for about three years now and I’ve started to have erection difficulties. We’ve got different ideas about what the problem is. She bought me some Viagra. And I’ve bought her a treadmill."
+  },
+  {
+    "type": "fat",
+    "text": " Only in American will you see “poor” fat people."
+  },
+  {
+    "type": "fat",
+    "text": " I’m not saying your wife’s fat but if I had to name the 5 fattest people I know, she’d be 3 of them."
+  },
+  {
+    "type": "fat",
+    "text": " If bars aren’t allowed to serve drunk people, then why is McDonald’s still allowed to serve fat people?"
+  },
+  {
+    "type": "fat",
+    "text": " I was at the customer-service desk, returning a pair of jeans that was too tight. “Was anything wrong with them?” the clerk asked. “Yes,” I said. “They hurt my feelings.”"
+  },
+  {
+    "type": "fat",
+    "text": " I was lying in bed with my wife last night. She looked at me seductively and said, “I’m wide awake, babe.” I said, “You’re wide when you’re asleep too.”"
+  },
+  {
+    "type": "fat",
+    "text": " Music teacher: ‘What’s your favorite musical instrument?’ Fat kid: ‘The lunch bell.’"
+  },
+  {
+    "type": "fat",
+    "text": " A guy is standing on the bathroom scales desperately sucking in his stomach. “That’s not going to help,” says his wife. “Yes, it will,” replies the man. “It’s the only way I can see the numbers!”"
+  },
+  {
+    "type": "fat",
+    "text": " What do you call two fat people having a chat? A heavy discussion."
+  },
+  {
+    "type": "fat",
+    "text": " After years of dieting, I found there was only one way to look thin: Hang out with fat people."
+  },
+  {
+    "type": "fat",
+    "text": " You have enough fat to make another human."
+  },
+  {
+    "type": "fat",
+    "text": " My boyfriend hates it when I make jokes about his weight. He needs to lighten up."
+  },
+  {
+    "type": "fat",
+    "text": " Your so fat you were rolling down a hill and you never stopped."
+  },
+  {
+    "type": "fat",
+    "text": " You never hear skinny people saying, “I’m just small boned.”"
+  },
+  {
+    "type": "fat",
+    "text": " You have more chins than Chinatown."
+  },
+  {
+    "type": "fat",
+    "text": " I’m not saying my girlfriend’s fat but she’s got so many double chins it looks like she’s staring at you over a plate of pancakes."
+  },
+  {
+    "type": "fat",
+    "text": " You’re so fat that your husband rolled over after sex, rolled over again and was STILL on top of you."
+  },
+  {
+    "type": "fat",
+    "text": " A rather obese man is very excited about his new job and wants to start work immediately. However, when he sits down at his computer, the only program installed was spreadsheets. Confused, the man calls over his boss and asks:”Why there is only excel installed on this computer?” His boss replies, “It was the only program in your size!”"
+  },
+  {
+    "type": "fat",
+    "text": " My 6-pack is very precious to me. That’s why I protect it with a layer of fat."
+  },
+  {
+    "type": "fat",
+    "text": " My New Year’s resolution is to help all my friends gain ten pounds so I look skinnier."
+  },
+  {
+    "type": "fat",
+    "text": " What do you call a fat psychic? A four chin teller."
+  },
+  {
+    "type": "fat",
+    "text": " You’re fat. It’s not because it runs in the family, you’re fat because nobody runs in your family."
+  }
+]

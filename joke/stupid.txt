@@ -1,0 +1,546 @@
+[
+  {
+    "type": "stupid",
+    "text": " What did the Buddhist say to the hot dog vendor? Make me one with everything. The hot dog vendor then gives him the dog and the Buddhist gives him a $20. Buddhist – Hey, where’s my change? Vendor – Change must come from within."
+  },
+  {
+    "type": "stupid",
+    "text": " Why did the skeleton go to the party alone? He had no body to go with him!"
+  },
+  {
+    "type": "stupid",
+    "text": " Where did Napoleon keep his armies? In his sleevies."
+  },
+  {
+    "type": "stupid",
+    "text": " What did one snowman say to the other? Do you smell carrots?"
+  },
+  {
+    "type": "stupid",
+    "text": " Two fish are in a tank. One turns to the other and says, “how do you drive this thing?”"
+  },
+  {
+    "type": "stupid",
+    "text": " Two soldiers are in a tank and one says to the other “blhfrpbbbrlbf”"
+  },
+  {
+    "type": "stupid",
+    "text": " What did the cobbler say when a cat wandered into his shop? Shoe!"
+  },
+  {
+    "type": "stupid",
+    "text": " The frustrated cannibal threw up his arms."
+  },
+  {
+    "type": "stupid",
+    "text": " What’s E.T. short for? Because he’s got little legs."
+  },
+  {
+    "type": "stupid",
+    "text": " Person 1: My dog has no nose. Person 2: How does it smell? Person 1: Terrible."
+  },
+  {
+    "type": "stupid",
+    "text": " I think my neighbor is stalking me as she’s been googling my name on her computer. I saw it through my telescope last night. Why did the cookie go to the hospital? Because he felt crummy."
+  },
+  {
+    "type": "stupid",
+    "text": " A guy walks into a bar and takes a seat. Before he can order a beer, the bowl of pretzels in front of him says “Hey, you’re a handsome fellow.” The man tries to ignore the bowl of pretzels, and orders a fine Pilsner beer. The bowl of pretzels then says “Ooooh, a pilsner, great choice. You’re a smart man.” Starting to freak out, the guy says to the bartender “Hey what the hell, this bowl of pretzels keeps saying nice things to me!” Bartender says “Don’t worry about it, the pretzels are complimentary.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a boomerang that doesn’t work? A stick."
+  },
+  {
+    "type": "stupid",
+    "text": " No matter how kind you are, German children will always be Kinder."
+  },
+  {
+    "type": "stupid",
+    "text": " Why is 6 afraid of 7? Because 7 is a registered 6 offender"
+  },
+  {
+    "type": "stupid",
+    "text": " A girl phoned me the other day and said, “Come on over, there’s nobody home.” I went over. Nobody was home."
+  },
+  {
+    "type": "stupid",
+    "text": " What did Batman tell Robin before they got in the batmobile? “Robin, get in the batmobile.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What kind of horses go out after dusk? Nightmares!"
+  },
+  {
+    "type": "stupid",
+    "text": " How do you find Will Smith in the snow? Look for the Fresh Prints."
+  },
+  {
+    "type": "stupid",
+    "text": " Where does the one-legged waitress work? IHOP"
+  },
+  {
+    "type": "stupid",
+    "text": " What’s red and bad for your teeth? A brick."
+  },
+  {
+    "type": "stupid",
+    "text": " Why is Peter Pan always flying? Because he never lands."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a pig that does karate? A PORK CHOP."
+  },
+  {
+    "type": "stupid",
+    "text": " A man with carrots in his ears walks onto a bus, the bus driver says “Sir, why do you have carrots in your ears?” The man says “WHAT? I CAN’T HEAR YOU, I HAVE CARROTS IN MY EARS!”"
+  },
+  {
+    "type": "stupid",
+    "text": " Sometimes, when I close my eyes, I… can’t see."
+  },
+  {
+    "type": "stupid",
+    "text": " Why did the dinosaur cross the road? Because the chickens wasn’t invented yet."
+  },
+  {
+    "type": "stupid",
+    "text": " Two scientists walk into a bar. The first one says “I’ll have some H2O.” The second one says, “I’ll have some H2O too.” and then he dies."
+  },
+  {
+    "type": "stupid",
+    "text": " Two dyslexics walk into a bra."
+  },
+  {
+    "type": "stupid",
+    "text": " Why do gorillas have big nostrils? Because they have big fingers."
+  },
+  {
+    "type": "stupid",
+    "text": " Why didn’t the Mexican archer fire his bow? He didn’t habanero."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call cheese that isn’t yours? Nacho Cheese."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a bear with no teeth? A Gummy Bear."
+  },
+  {
+    "type": "stupid",
+    "text": " How does a spoiled rich girl change a lightbulb? She says, “Daddy, I want a new apartment.”"
+  },
+  {
+    "type": "stupid",
+    "text": " Do you ever notice that when you’re driving, anyone going slower than you is an idiot and everyone driving faster than you is a maniac?"
+  },
+  {
+    "type": "stupid",
+    "text": " How do you now when its raining cats and dogs? When you step in a poodle."
+  },
+  {
+    "type": "stupid",
+    "text": " I used to be indecisive. Now I’m not sure."
+  },
+  {
+    "type": "stupid",
+    "text": " Why don’t ants get sick? Because they have little anty-bodies."
+  },
+  {
+    "type": "stupid",
+    "text": " Person 1: hey, did you ever blow bubbles when you were younger? Person 2: Yeah, all the time. Person 1: Well he’s back in town and wants your new number."
+  },
+  {
+    "type": "stupid",
+    "text": " I read a book on helium once. I couldn’t put it down!"
+  },
+  {
+    "type": "stupid",
+    "text": " A guy asks his waiter how they prepare their chicken. The waiter says “Nothin’ special. We just flat out tell’ em they’re gonna die.”"
+  },
+  {
+    "type": "stupid",
+    "text": " A grasshopper walks into a bar. The bartender says “Hey, we’ve got a drink named after you.” Grasshopper says “You’ve got a drink named Steve?”"
+  },
+  {
+    "type": "stupid",
+    "text": " “Waiter! This coffee tastes like mud.” “Yes sir,” came the reply, “it’s fresh ground.”"
+  },
+  {
+    "type": "stupid",
+    "text": " If a parsley farmer is sued, can they garnish his wages?"
+  },
+  {
+    "type": "stupid",
+    "text": " Light travels faster than sound. This is why some people appear bright until you hear them speak."
+  },
+  {
+    "type": "stupid",
+    "text": " “Which is the most stupid animal living in the jungle?” “The polar bear.”"
+  },
+  {
+    "type": "stupid",
+    "text": " How many Mexicans does it take to screw in a light bulb? Just Juan."
+  },
+  {
+    "type": "stupid",
+    "text": " This dog, is dog, a dog, good dog, way dog, to dog, keep dog, an dog, idiot dog, busy dog, for dog, 20 dog, seconds dog! Now read without the word dog."
+  },
+  {
+    "type": "stupid",
+    "text": " A politician is one who shakes your hand before elections and your confidence after."
+  },
+  {
+    "type": "stupid",
+    "text": " The very first doctor of dermatology had to start from scratch."
+  },
+  {
+    "type": "stupid",
+    "text": " How do you get a dog to stop barking in the front seat? Put him in the back seat."
+  },
+  {
+    "type": "stupid",
+    "text": " When we were looking to buy property I had this over zealous Realtor show us what can only be described as a totally worn out old farm. I mean the land had just been worked to death. The weeds were hardly even growing. The smiling super salesman said, “Now really, all this land needs is a little water, a nice cool breeze and some good people.” I replied, “Yeah, I agree, but couldn’t the same be said of Hell?”"
+  },
+  {
+    "type": "stupid",
+    "text": " What’s brown and sticky? A stick."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a funeral where you smell your own flowers? A wedding."
+  },
+  {
+    "type": "stupid",
+    "text": " How do crazy people go through the forest? They take the psycho path."
+  },
+  {
+    "type": "stupid",
+    "text": " A pirate walks into a bar with a ship’s steering wheel stuck to the front of his pants. The bartender asks, “Hey, doesn’t that hurt?” The pirate growls, “Aye, it’s drivin’ me nuts.”"
+  },
+  {
+    "type": "stupid",
+    "text": " A group of young men were sitting around the coffee shop complaining about how hard it was to get by in this day and age.  Bob, an old timer, was listening to them and finally spoke. “You kids don’t know what hard times are. Why, when I was your age we were so poor we couldn’t afford electricity. Why, we even had to watch television by candle light.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a doe born without eyes? No idear."
+  },
+  {
+    "type": "stupid",
+    "text": " One day there were three people. Their names were Manners, Trouble and Shut up. One day they were playing hide and seek. Manners got a tummy ache so he went to the toilet. Trouble was hiding. Shut up was finding Trouble when he met a policeman. The policeman said, “What is your name?” “Shut up!”  The policeman replied, “Are you looking for trouble?” “Yes!”  The policeman fumed, “Where are your manners?” “In the toilet.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What would you call it when an Italian has one arm shorter than the other? A speech impediment."
+  },
+  {
+    "type": "stupid",
+    "text": " “I see” said the blind man as he pissed into the wind. “It’s all coming back to me now”."
+  },
+  {
+    "type": "stupid",
+    "text": " A woman walked up to the manager of a department store. “Are you hiring any help?” she asked. “No,” he said. “We already have all the staff we need.” “Then would you mind getting someone to wait on me?” she asked."
+  },
+  {
+    "type": "stupid",
+    "text": " Did you hear the one about the man who opened a dry-cleaning business next door to the convent? He knocked on the door and asked the Mother Superior if she had any dirty habits."
+  },
+  {
+    "type": "stupid",
+    "text": " A gay wizard walks into a bar and disappears with a poof."
+  },
+  {
+    "type": "stupid",
+    "text": " What is the definition of an engineer? Someone who solves a problem you didn’t know you had, in a way you don’t understand."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a musician without a girlfriend? Homeless."
+  },
+  {
+    "type": "stupid",
+    "text": " Why does it take pirates so long to learn the alphabet? Because they can spend years at “C”."
+  },
+  {
+    "type": "stupid",
+    "text": " What has three teeth and sixty feet? The front row at a Willy Nelson concert."
+  },
+  {
+    "type": "stupid",
+    "text": " What did the cannibal do after he dumped his girlfriend? Wiped his ass."
+  },
+  {
+    "type": "stupid",
+    "text": " What did the Buddhist say to the hot dog vendor? Make me one with everything. The hot dog vendor then gives him the dog and the Buddhist gives him a $20. Buddhist – Hey, where’s my change? Vendor – Change must come from within."
+  },
+  {
+    "type": "stupid",
+    "text": " Why did the skeleton go to the party alone? He had no body to go with him!"
+  },
+  {
+    "type": "stupid",
+    "text": " Where did Napoleon keep his armies? In his sleevies."
+  },
+  {
+    "type": "stupid",
+    "text": " What did one snowman say to the other? Do you smell carrots?"
+  },
+  {
+    "type": "stupid",
+    "text": " Two fish are in a tank. One turns to the other and says, “how do you drive this thing?”"
+  },
+  {
+    "type": "stupid",
+    "text": " Two soldiers are in a tank and one says to the other “blhfrpbbbrlbf”"
+  },
+  {
+    "type": "stupid",
+    "text": " What did the cobbler say when a cat wandered into his shop? Shoe!"
+  },
+  {
+    "type": "stupid",
+    "text": " The frustrated cannibal threw up his arms."
+  },
+  {
+    "type": "stupid",
+    "text": " What’s E.T. short for? Because he’s got little legs."
+  },
+  {
+    "type": "stupid",
+    "text": " Person 1: My dog has no nose. Person 2: How does it smell? Person 1: Terrible."
+  },
+  {
+    "type": "stupid",
+    "text": " I think my neighbor is stalking me as she’s been googling my name on her computer. I saw it through my telescope last night. Why did the cookie go to the hospital? Because he felt crummy."
+  },
+  {
+    "type": "stupid",
+    "text": " A guy walks into a bar and takes a seat. Before he can order a beer, the bowl of pretzels in front of him says “Hey, you’re a handsome fellow.” The man tries to ignore the bowl of pretzels, and orders a fine Pilsner beer. The bowl of pretzels then says “Ooooh, a pilsner, great choice. You’re a smart man.” Starting to freak out, the guy says to the bartender “Hey what the hell, this bowl of pretzels keeps saying nice things to me!” Bartender says “Don’t worry about it, the pretzels are complimentary.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a boomerang that doesn’t work? A stick."
+  },
+  {
+    "type": "stupid",
+    "text": " No matter how kind you are, German children will always be Kinder."
+  },
+  {
+    "type": "stupid",
+    "text": " Why is 6 afraid of 7? Because 7 is a registered 6 offender"
+  },
+  {
+    "type": "stupid",
+    "text": " A girl phoned me the other day and said, “Come on over, there’s nobody home.” I went over. Nobody was home."
+  },
+  {
+    "type": "stupid",
+    "text": " What did Batman tell Robin before they got in the batmobile? “Robin, get in the batmobile.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What kind of horses go out after dusk? Nightmares!"
+  },
+  {
+    "type": "stupid",
+    "text": " How do you find Will Smith in the snow? Look for the Fresh Prints."
+  },
+  {
+    "type": "stupid",
+    "text": " Where does the one-legged waitress work? IHOP"
+  },
+  {
+    "type": "stupid",
+    "text": " What’s red and bad for your teeth? A brick."
+  },
+  {
+    "type": "stupid",
+    "text": " Why is Peter Pan always flying? Because he never lands."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a pig that does karate? A PORK CHOP."
+  },
+  {
+    "type": "stupid",
+    "text": " A man with carrots in his ears walks onto a bus, the bus driver says “Sir, why do you have carrots in your ears?” The man says “WHAT? I CAN’T HEAR YOU, I HAVE CARROTS IN MY EARS!”"
+  },
+  {
+    "type": "stupid",
+    "text": " Sometimes, when I close my eyes, I… can’t see."
+  },
+  {
+    "type": "stupid",
+    "text": " Why did the dinosaur cross the road? Because the chickens wasn’t invented yet."
+  },
+  {
+    "type": "stupid",
+    "text": " Two scientists walk into a bar. The first one says “I’ll have some H2O.” The second one says, “I’ll have some H2O too.” and then he dies."
+  },
+  {
+    "type": "stupid",
+    "text": " Two dyslexics walk into a bra."
+  },
+  {
+    "type": "stupid",
+    "text": " Why do gorillas have big nostrils? Because they have big fingers."
+  },
+  {
+    "type": "stupid",
+    "text": " Why didn’t the Mexican archer fire his bow? He didn’t habanero."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call cheese that isn’t yours? Nacho Cheese."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a bear with no teeth? A Gummy Bear."
+  },
+  {
+    "type": "stupid",
+    "text": " How does a spoiled rich girl change a lightbulb? She says, “Daddy, I want a new apartment.”"
+  },
+  {
+    "type": "stupid",
+    "text": " Do you ever notice that when you’re driving, anyone going slower than you is an idiot and everyone driving faster than you is a maniac?"
+  },
+  {
+    "type": "stupid",
+    "text": " How do you now when its raining cats and dogs? When you step in a poodle."
+  },
+  {
+    "type": "stupid",
+    "text": " I used to be indecisive. Now I’m not sure."
+  },
+  {
+    "type": "stupid",
+    "text": " Why don’t ants get sick? Because they have little anty-bodies."
+  },
+  {
+    "type": "stupid",
+    "text": " Person 1: hey, did you ever blow bubbles when you were younger? Person 2: Yeah, all the time. Person 1: Well he’s back in town and wants your new number."
+  },
+  {
+    "type": "stupid",
+    "text": " I read a book on helium once. I couldn’t put it down!"
+  },
+  {
+    "type": "stupid",
+    "text": " A guy asks his waiter how they prepare their chicken. The waiter says “Nothin’ special. We just flat out tell’ em they’re gonna die.”"
+  },
+  {
+    "type": "stupid",
+    "text": " A grasshopper walks into a bar. The bartender says “Hey, we’ve got a drink named after you.” Grasshopper says “You’ve got a drink named Steve?”"
+  },
+  {
+    "type": "stupid",
+    "text": " “Waiter! This coffee tastes like mud.” “Yes sir,” came the reply, “it’s fresh ground.”"
+  },
+  {
+    "type": "stupid",
+    "text": " If a parsley farmer is sued, can they garnish his wages?"
+  },
+  {
+    "type": "stupid",
+    "text": " Light travels faster than sound. This is why some people appear bright until you hear them speak."
+  },
+  {
+    "type": "stupid",
+    "text": " “Which is the most stupid animal living in the jungle?” “The polar bear.”"
+  },
+  {
+    "type": "stupid",
+    "text": " How many Mexicans does it take to screw in a light bulb? Just Juan."
+  },
+  {
+    "type": "stupid",
+    "text": " This dog, is dog, a dog, good dog, way dog, to dog, keep dog, an dog, idiot dog, busy dog, for dog, 20 dog, seconds dog! Now read without the word dog."
+  },
+  {
+    "type": "stupid",
+    "text": " A politician is one who shakes your hand before elections and your confidence after."
+  },
+  {
+    "type": "stupid",
+    "text": " The very first doctor of dermatology had to start from scratch."
+  },
+  {
+    "type": "stupid",
+    "text": " How do you get a dog to stop barking in the front seat? Put him in the back seat."
+  },
+  {
+    "type": "stupid",
+    "text": " When we were looking to buy property I had this over zealous Realtor show us what can only be described as a totally worn out old farm. I mean the land had just been worked to death. The weeds were hardly even growing. The smiling super salesman said, “Now really, all this land needs is a little water, a nice cool breeze and some good people.” I replied, “Yeah, I agree, but couldn’t the same be said of Hell?”"
+  },
+  {
+    "type": "stupid",
+    "text": " What’s brown and sticky? A stick."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a funeral where you smell your own flowers? A wedding."
+  },
+  {
+    "type": "stupid",
+    "text": " How do crazy people go through the forest? They take the psycho path."
+  },
+  {
+    "type": "stupid",
+    "text": " A pirate walks into a bar with a ship’s steering wheel stuck to the front of his pants. The bartender asks, “Hey, doesn’t that hurt?” The pirate growls, “Aye, it’s drivin’ me nuts.”"
+  },
+  {
+    "type": "stupid",
+    "text": " A group of young men were sitting around the coffee shop complaining about how hard it was to get by in this day and age.  Bob, an old timer, was listening to them and finally spoke. “You kids don’t know what hard times are. Why, when I was your age we were so poor we couldn’t afford electricity. Why, we even had to watch television by candle light.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a doe born without eyes? No idear."
+  },
+  {
+    "type": "stupid",
+    "text": " One day there were three people. Their names were Manners, Trouble and Shut up. One day they were playing hide and seek. Manners got a tummy ache so he went to the toilet. Trouble was hiding. Shut up was finding Trouble when he met a policeman. The policeman said, “What is your name?” “Shut up!”  The policeman replied, “Are you looking for trouble?” “Yes!”  The policeman fumed, “Where are your manners?” “In the toilet.”"
+  },
+  {
+    "type": "stupid",
+    "text": " What would you call it when an Italian has one arm shorter than the other? A speech impediment."
+  },
+  {
+    "type": "stupid",
+    "text": " “I see” said the blind man as he pissed into the wind. “It’s all coming back to me now”."
+  },
+  {
+    "type": "stupid",
+    "text": " A woman walked up to the manager of a department store. “Are you hiring any help?” she asked. “No,” he said. “We already have all the staff we need.” “Then would you mind getting someone to wait on me?” she asked."
+  },
+  {
+    "type": "stupid",
+    "text": " Did you hear the one about the man who opened a dry-cleaning business next door to the convent? He knocked on the door and asked the Mother Superior if she had any dirty habits."
+  },
+  {
+    "type": "stupid",
+    "text": " A gay wizard walks into a bar and disappears with a poof."
+  },
+  {
+    "type": "stupid",
+    "text": " What is the definition of an engineer? Someone who solves a problem you didn’t know you had, in a way you don’t understand."
+  },
+  {
+    "type": "stupid",
+    "text": " What do you call a musician without a girlfriend? Homeless."
+  },
+  {
+    "type": "stupid",
+    "text": " Why does it take pirates so long to learn the alphabet? Because they can spend years at “C”."
+  },
+  {
+    "type": "stupid",
+    "text": " What has three teeth and sixty feet? The front row at a Willy Nelson concert."
+  },
+  {
+    "type": "stupid",
+    "text": " What did the cannibal do after he dumped his girlfriend? Wiped his ass."
+  }
+]
